@@ -1,3 +1,14 @@
+import path from 'path'
+
+import Mode from 'frontmatter-markdown-loader/mode'
+import MarkdownIt from 'markdown-it'
+import mip from 'markdown-it-prism'
+
+const md = new MarkdownIt({
+  html: true,
+  typographer: true
+})
+md.use(mip)
 
 export default {
   mode: 'universal',
@@ -23,6 +34,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/prism-material-light.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -58,7 +70,23 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend (config) {
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          loader: 'frontmatter-markdown-loader',
+          include: path.resolve(__dirname, 'contents'),
+          options: {
+            mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
+            vue: {
+              root: 'dynamicMarkdown'
+            },
+            markdown (body) {
+              return md.render(body)
+            }
+          }
+        }
+      )
     }
   }
 }
