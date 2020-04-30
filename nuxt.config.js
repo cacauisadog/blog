@@ -34,7 +34,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/prism-material-light.css'
+    '@/assets/css/prism-tomorrow-night.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -55,13 +55,19 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-webfontloader'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+  },
+  webfontloader: {
+    google: {
+      families: ['Lato:100,300,400,700,900'] /* Loads Lato font with weights 100 through 700 */
+    }
   },
   /*
   ** Build configuration
