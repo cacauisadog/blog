@@ -1,8 +1,15 @@
 import path from 'path'
+import fs from 'fs'
 
 import Mode from 'frontmatter-markdown-loader/mode'
 import MarkdownIt from 'markdown-it'
 import mip from 'markdown-it-prism'
+
+function getFilePaths (type) {
+  return fs.readdirSync(path.resolve(__dirname, 'contents', type))
+    .filter(filename => path.extname(filename) === '.md')
+    .map(filename => `${type}/${path.parse(filename).name}`)
+}
 
 const md = new MarkdownIt({
   html: true,
@@ -69,6 +76,12 @@ export default {
     google: {
       families: ['Lato:100,300,400,700,900'] /* Loads Lato font with weights 100 through 700 */
     }
+  },
+  generate: {
+    routes: [
+      '404'
+    ]
+      .concat(getFilePaths('blog'))
   },
   /*
   ** Build configuration

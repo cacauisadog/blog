@@ -30,7 +30,7 @@ export default {
     }
   },
   created () {
-    //  JEITO TOP
+    //  JEITO TOP - FAZ CODE SPLITTING
     import('~/contents/blog/' + this.fileName + '.md').then((md) => {
       const attr = md.attributes
       this.title = attr.title
