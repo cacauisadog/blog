@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
-    "frontmatter-markdown-loader": "^3.4.1",
+    "frontmatter-markdown-loader": "^3.4.2",
     "markdown-it": "^10.0.0",
     "markdown-it-prism": "^2.0.5",
     "nuxt": "^2.0.0",
