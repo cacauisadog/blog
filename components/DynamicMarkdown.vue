@@ -1,14 +1,16 @@
 <template>
   <div class="container max-w-screen-md sm:mx-auto p-4">
-    <h1 class="title">
-      {{ title }}
-    </h1>
-    <p>
-      {{ description }}
-    </p>
-    <p>
-      {{ date }}
-    </p>
+    <section class="text-gray-100 mb-8">
+      <h1 class="title">
+        {{ title }}
+      </h1>
+      <p class="text-xl mb-2">
+        {{ description }}
+      </p>
+      <p class="text-sm font-light">
+        {{ date }}
+      </p>
+    </section>
     <Component :is="dynamicComponent" />
   </div>
 </template>
@@ -88,7 +90,7 @@ export default {
   border-radius: 4px;
   overflow-x: scroll;
   display: block;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   @apply bg-gray-800;
 }
 
