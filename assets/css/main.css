@@ -34,6 +34,10 @@ body::-webkit-scrollbar-thumb {
   @apply bg-purple-600;
 } */
 
+p {
+  @apply text-gray-100;
+}
+
 .title {
   @apply text-4xl leading-tight mb-6 text-gray-200;
 }
