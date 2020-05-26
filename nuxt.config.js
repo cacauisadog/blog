@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import path from 'path'
 import fs from 'fs'
 
@@ -16,6 +17,8 @@ const md = new MarkdownIt({
   typographer: true
 })
 md.use(mip)
+=======
+>>>>>>> 19532ac... rewrites everything using @nuxt/content
 
 export default {
   mode: 'universal',
@@ -41,8 +44,11 @@ export default {
   ** Global CSS
   */
   css: [
+<<<<<<< HEAD
     '@/assets/css/main.css',
     '@/assets/css/prism-tomorrow-night.css'
+=======
+>>>>>>> 19532ac... rewrites everything using @nuxt/content
   ],
   /*
   ** Plugins to load before mounting the App
@@ -62,6 +68,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+<<<<<<< HEAD
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     'nuxt-webfontloader'
@@ -83,6 +90,17 @@ export default {
     ]
       .concat(getFilePaths('blog'))
   },
+=======
+    '@nuxt/content'
+  ],
+  content: {
+    markdown: {
+      prism: {
+        theme: 'assets/css/prism-tomorrow-night-eighties.css'
+      }
+    }
+  },
+>>>>>>> 19532ac... rewrites everything using @nuxt/content
   /*
   ** Build configuration
   */
@@ -90,6 +108,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+<<<<<<< HEAD
     extend (config) {
       config.module.rules.push(
         {
@@ -107,6 +126,9 @@ export default {
           }
         }
       )
+=======
+    extend (config, ctx) {
+>>>>>>> 19532ac... rewrites everything using @nuxt/content
     }
   }
 }
