@@ -1,12 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <h1>Oi blog!</h1>
-</template>
-
-<script>
-export default {
-
-=======
   <div>
     <h1 class="text-white">
       blog index
@@ -33,7 +25,6 @@ export default {
 
     return { articles }
   }
->>>>>>> 19532ac... rewrites everything using @nuxt/content
 }
 </script>
 

@@ -19,8 +19,6 @@ export default {
   }
 }
 </script>
-<<<<<<< HEAD
-=======
 
 <style lang="postcss">
 html {
@@ -73,4 +71,3 @@ p {
   }
 }
 </style>
->>>>>>> 19532ac... rewrites everything using @nuxt/content

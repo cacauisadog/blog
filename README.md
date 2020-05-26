@@ -1,10 +1,6 @@
 # cacauisablog
 
-<<<<<<< HEAD
-> My pioneering Nuxt.js project
-=======
 > cacauisadogs blog
->>>>>>> 19532ac... rewrites everything using @nuxt/content
 
 ## Build Setup
 

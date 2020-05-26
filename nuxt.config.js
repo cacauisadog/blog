@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-import path from 'path'
-import fs from 'fs'
-
-import Mode from 'frontmatter-markdown-loader/mode'
-import MarkdownIt from 'markdown-it'
-import mip from 'markdown-it-prism'
-
-function getFilePaths (type) {
-  return fs.readdirSync(path.resolve(__dirname, 'contents', type))
-    .filter(filename => path.extname(filename) === '.md')
-    .map(filename => `${type}/${path.parse(filename).name}`)
-}
-
-const md = new MarkdownIt({
-  html: true,
-  typographer: true
-})
-md.use(mip)
-=======
->>>>>>> 19532ac... rewrites everything using @nuxt/content
 
 export default {
   mode: 'universal',
@@ -44,11 +23,6 @@ export default {
   ** Global CSS
   */
   css: [
-<<<<<<< HEAD
-    '@/assets/css/main.css',
-    '@/assets/css/prism-tomorrow-night.css'
-=======
->>>>>>> 19532ac... rewrites everything using @nuxt/content
   ],
   /*
   ** Plugins to load before mounting the App
@@ -68,29 +42,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-<<<<<<< HEAD
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    'nuxt-webfontloader'
-  ],
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
-  webfontloader: {
-    google: {
-      families: ['Lato:100,300,400,700,900'] /* Loads Lato font with weights 100 through 700 */
-    }
-  },
-  generate: {
-    routes: [
-      '404'
-    ]
-      .concat(getFilePaths('blog'))
-  },
-=======
     '@nuxt/content'
   ],
   content: {
@@ -100,7 +51,6 @@ export default {
       }
     }
   },
->>>>>>> 19532ac... rewrites everything using @nuxt/content
   /*
   ** Build configuration
   */
@@ -108,27 +58,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-<<<<<<< HEAD
-    extend (config) {
-      config.module.rules.push(
-        {
-          test: /\.md$/,
-          loader: 'frontmatter-markdown-loader',
-          include: path.resolve(__dirname, 'contents'),
-          options: {
-            mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
-            vue: {
-              root: 'dynamicMarkdown'
-            },
-            markdown (body) {
-              return md.render(body)
-            }
-          }
-        }
-      )
-=======
     extend (config, ctx) {
->>>>>>> 19532ac... rewrites everything using @nuxt/content
     }
   }
 }

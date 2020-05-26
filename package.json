@@ -1,18 +1,9 @@
 {
   "name": "cacauisablog",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "author": "cacauisadog <cbcaue@gmail.com>",
-  "private": true,
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
-  },
-=======
   "description": "cacauisadogs blog",
   "author": "cacauisadog",
   "private": true,
->>>>>>> 19532ac... rewrites everything using @nuxt/content
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -22,31 +13,15 @@
     "analyze": "nuxt build --analyze"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@nuxtjs/axios": "^5.10.3",
-    "frontmatter-markdown-loader": "^3.4.2",
-    "markdown-it": "^10.0.0",
-    "markdown-it-prism": "^2.0.5",
-    "nuxt": "^2.0.0",
-    "nuxt-webfontloader": "^1.1.0"
-  },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^2.0.0",
-=======
     "@nuxt/content": "^1.0.2",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
->>>>>>> 19532ac... rewrites everything using @nuxt/content
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.2"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 19532ac... rewrites everything using @nuxt/content

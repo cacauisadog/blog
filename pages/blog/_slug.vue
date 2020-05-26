@@ -1,24 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <DynamicMarkdown :file-name="fileName" />
-</template>
-
-<script>
-import DynamicMarkdown from '~/components/DynamicMarkdown.vue'
-
-export default {
-  components: {
-    DynamicMarkdown
-  },
-  async asyncData ({ params }) {
-    return await {
-      fileName: params.slug
-    }
-  }
-}
-
-</script>
-=======
   <article class="container max-w-screen-md sm:mx-auto p-4">
     <header>
       <h1 class="title">
@@ -100,4 +80,3 @@ export default {
   }
 }
 </style>
->>>>>>> 19532ac... rewrites everything using @nuxt/content

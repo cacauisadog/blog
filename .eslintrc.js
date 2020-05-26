@@ -13,10 +13,5 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-<<<<<<< HEAD
-    'quotes': [2, 'single'],
-    'semi': [2, 'never']
-=======
->>>>>>> 19532ac... rewrites everything using @nuxt/content
   }
 }
