@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col rounded shadow overflow-hidden mb-16 last:mb-0">
+  <article class="flex flex-col rounded shadow overflow-hidden mb-8 last:mb-0 border border-white p-4">
     <nuxt-link
       :to="`/blog/${article.slug}`"
       class="block"
