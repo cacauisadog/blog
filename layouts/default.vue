@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <main class="mt-16">
+    <main class="mt-20">
       <nuxt />
     </main>
     <Footer />
@@ -31,13 +31,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
 }
 
 body {
