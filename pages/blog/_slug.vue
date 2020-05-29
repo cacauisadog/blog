@@ -1,5 +1,5 @@
 <template>
-  <article class="container max-w-screen-md sm:mx-auto p-4">
+  <article class="container max-w-screen-md mx-auto md:p-0 p-4">
     <header>
       <h1 class="title">
         {{ doc.title }}
