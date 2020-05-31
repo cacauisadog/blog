@@ -1,7 +1,6 @@
 ---
 title: "Testing frontmatter markdown loader"
 description: "Just a simple, short description of what the text in this post is all about."
-date: "2020-04-28"
 ---
 
 ## Oi mundo!
