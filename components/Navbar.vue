@@ -19,18 +19,18 @@
       </li>
       <li class="ml-2 md:ml-4 cursor-pointer hover:text-white">
         <nuxt-link
-          :to="`/sobre`"
+          :to="`/drops`"
           class="p-2"
         >
-          sobre
+          drops
         </nuxt-link>
       </li>
       <li class="ml-2 md:ml-4 cursor-pointer hover:text-white">
         <nuxt-link
-          :to="`/uses`"
+          :to="`/about`"
           class="p-2"
         >
-          /uses
+          sobre
         </nuxt-link>
       </li>
     </ul>
