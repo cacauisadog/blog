@@ -33,34 +33,79 @@ html {
   box-sizing: border-box;
 }
 
+@screen sm {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
-  /* @apply bg-gray-900; */
   background-color: rgb(34, 34, 34);
-}
-/*
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  @apply bg-gray-800;
-}
-
-body::-webkit-scrollbar-thumb {
-  @apply bg-purple-600;
-} */
-
-p {
-  @apply text-gray-100;
 }
 
 .title {
   @apply text-4xl leading-tight mb-6 text-gray-200;
 }
 
+.description {
+  @apply text-gray-100 text-xl mb-2;
+}
+
+.date {
+  @apply text-sm font-light;
+}
+
+.nuxt-content > h2 {
+  font-weight: 400;
+  @apply text-3xl leading-tight mb-5 text-gray-100;
+}
+
+.nuxt-content > h3 {
+  font-weight: 400;
+  @apply text-2xl leading-tight mb-4 text-gray-100;
+}
+
+.nuxt-content > ul {
+  @apply ml-5 list-disc font-light text-xl leading-normal mb-12 text-gray-100;
+}
+
+.nuxt-content > ul > li {
+  @apply mb-4;
+}
+
+.nuxt-content > p {
+  @apply font-light text-xl leading-normal mb-12 text-gray-100;
+}
+
+.nuxt-content > p > a:hover {
+  @apply underline;
+}
+
+.nuxt-content > p > a {
+  @apply text-blue-600;
+}
+
+.nuxt-content > p > code {
+  @apply italic text-xl;
+}
+
+.nuxt-content > pre {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  padding: 2.4rem;
+  border-radius: 4px;
+  overflow-x: scroll;
+  display: block;
+  margin-bottom: 3rem;
+  @apply bg-gray-800;
+}
+
+.nuxt-content > pre > code {
+  @apply bg-gray-800;
+}
+
 @screen sm {
-  html {
-    font-size: 16px;
+  .nuxt-content > code {
+    @apply text-base;
   }
 }
 </style>
