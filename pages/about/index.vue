@@ -1,18 +1,18 @@
 <template>
   <div class="container max-w-screen-md mx-auto">
     <h1 class="title">
-      {{ home.title }}
+      {{ about.title }}
     </h1>
-    <nuxt-content :document="home" />
+    <nuxt-content :document="about" />
   </div>
 </template>
 
 <script>
 export default {
   async asyncData ({ $content }) {
-    const home = await $content('pages', 'home').fetch()
+    const about = await $content('pages', 'about').fetch()
 
-    return { home }
+    return { about }
   }
 }
 </script>
