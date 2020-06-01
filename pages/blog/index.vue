@@ -17,7 +17,7 @@ export default {
     ArticleList: () => import('./components/ArticleList.vue')
   },
   async asyncData ({ $content }) {
-    const articles = await $content('articles')
+    const articles = await $content('blog')
       .only(['title', 'description', 'slug', 'createdAt'])
       .sortBy('createdAt', 'asc')
       .fetch()
