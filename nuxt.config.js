@@ -60,5 +60,19 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  generate: {
+    async routes () {
+      const { $content } = require('@nuxt/content')
+
+      const rootPages = await $content().only(['path']).fetch()
+      const articlesPages = await $content('blog').only(['path']).fetch()
+
+      const pages = []
+      return pages.concat(
+        rootPages.map(p => p.path === '/index' ? '/' : p.path),
+        articlesPages.map(p => p.path)
+      )
+    }
   }
 }
