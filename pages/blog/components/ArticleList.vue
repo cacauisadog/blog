@@ -1,16 +1,16 @@
 <template>
-  <article class="flex flex-col rounded shadow overflow-hidden mb-8 last:mb-0 border border-white p-4">
+  <article class="rounded shadow overflow-hidden mb-8 border border-white p-4">
     <nuxt-link
       :to="`/blog/${article.slug}`"
       class="block"
     >
-      <h2 class="mt-2 text-xl leading-7 font-semibold text-gray-200 dark:text-white">
+      <h2 class="text-xl leading-7 font-semibold text-gray-200">
         {{ article.title }}
       </h2>
-      <p class="text-sm font-thin">
+      <p class="text-sm font-thin text-gray-100">
         {{ articleDate }}
       </p>
-      <h3 class="mt-3 text-base leading-6 text-gray-100 dark:text-gray-400">
+      <h3 class="mt-3 text-base leading-6 text-gray-100">
         {{ article.description }}
       </h3>
     </nuxt-link>
@@ -34,6 +34,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md mx-auto px-4 md:px-0">
+  <div class="container max-w-screen-md mx-auto md:px-2 px-5">
     <h1 class="title">
       List of blog posts
     </h1>
@@ -26,6 +26,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

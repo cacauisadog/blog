@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md mx-auto">
+  <div class="container max-w-screen-md mx-auto md:px-0 px-5">
     <h1 class="title">
       {{ home.title }}
     </h1>
@@ -16,6 +16,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
