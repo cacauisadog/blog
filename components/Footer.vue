@@ -125,30 +125,6 @@
   </footer>
 </template>
 
-<script>
-import IconBase from '~/components/IconBase.vue'
-import IconGithub from '~/components/icons/IconGithub.vue'
-import IconTwitter from '~/components/icons/IconTwitter.vue'
-import IconVuejs from '~/components/icons/IconVuejs.vue'
-import IconNuxtjs from '~/components/icons/IconNuxtjs.vue'
-import IconTailwindcss from '~/components/icons/IconTailwindcss.vue'
-import IconMarkdown from '~/components/icons/IconMarkdown.vue'
-import IconNetlify from '~/components/icons/IconNetlify.vue'
-
-export default {
-  components: {
-    IconBase,
-    IconGithub,
-    IconTwitter,
-    IconVuejs,
-    IconNuxtjs,
-    IconTailwindcss,
-    IconMarkdown,
-    IconNetlify
-  }
-}
-</script>
-
 <style lang="postcss" scoped>
 div > p {
   @apply text-lg;
