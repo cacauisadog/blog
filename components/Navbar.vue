@@ -1,6 +1,6 @@
 <template>
   <header class="w-screen bg-black fixed top-0">
-    <ul class="h-12 container max-w-screen-md mx-auto px-4 md:px-0 flex text-lg text-gray-500 items-center">
+    <ul class="h-12 container max-w-screen-md px-4 md:px-0 flex text-lg text-gray-500 items-center">
       <li class="cursor-pointer hover:text-gray-500">
         <nuxt-link
           :to="`/`"

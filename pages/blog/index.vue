@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md mx-auto md:px-2 px-5">
+  <div class="container max-w-screen-md md:px-2 px-5">
     <h1 class="title">
       List of blog posts
     </h1>

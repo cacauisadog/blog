@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md mx-auto">
+  <div class="container max-w-screen-md md:px-0 px-5">
     <h1 class="title">
       {{ about.title }}
     </h1>

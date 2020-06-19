@@ -5,7 +5,14 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {},
+  theme: {
+    container: {
+      center: true
+    },
+    extend: {
+      colors: { green: '#64B984' }
+    }
+  },
   variants: {},
   plugins: [],
   purge: {

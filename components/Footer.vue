@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-black py-8 text-center">
-    <div class="container max-w-screen-sm mx-auto px-4 md:px-0 flex flex-col md:items-center mb-8">
+    <div class="container max-w-screen-sm px-4 md:px-0 flex flex-col md:items-center mb-8">
       <div class="md:w-1/2 mb-8">
         <p class="mb-4">
           Me dá um olá, me manda um oi
