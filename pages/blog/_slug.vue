@@ -1,10 +1,8 @@
 <template>
   <article class="container max-w-screen-md md:p-0 p-4">
-    <header>
-      <h1 class="title">
-        {{ article.title }}
-      </h1>
-    </header>
+    <h1 class="title">
+      {{ article.title }}
+    </h1>
 
     <p class="description">
       {{ article.description }}

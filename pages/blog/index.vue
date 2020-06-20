@@ -3,19 +3,16 @@
     <h1 class="title">
       List of blog posts
     </h1>
-    <article-list
-      v-for="article in articles"
-      :key="article.slug"
-      :article="article"
+    <LazyArticleList
+      v-if="articles"
+      :articles="articles"
     />
+    <ArticleListSkeleton v-else />
   </div>
 </template>
 
 <script>
 export default {
-  components: {
-    ArticleList: () => import('./components/ArticleList.vue')
-  },
   async asyncData ({ $content }) {
     const articles = await $content('blog')
       .only(['title', 'description', 'slug', 'createdAt'])
