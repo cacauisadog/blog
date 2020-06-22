@@ -1,6 +1,6 @@
 <template>
   <article class="rounded shadow overflow-hidden mb-8 border border-white p-4">
-    <nuxt-link
+    <router-link
       :to="`/blog/${article.slug}`"
       class="block"
     >
@@ -13,7 +13,7 @@
       <h3 class="mt-3 text-base leading-6 text-gray-100">
         {{ article.description }}
       </h3>
-    </nuxt-link>
+    </router-link>
   </article>
 </template>
 
