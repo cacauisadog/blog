@@ -1,19 +1,6 @@
 <template>
-  <article class="container max-w-screen-md md:p-0 p-4">
-    <h1 class="title">
-      {{ article.title }}
-    </h1>
-
-    <p class="description">
-      {{ article.description }}
-    </p>
-    <p class="date">
-      {{ article.date }}
-    </p>
-    <nuxt-content
-      class="mt-8"
-      :document="article"
-    />
+  <article class="md:p-0 p-4">
+    <MarkdownContent :markdown="article" />
   </article>
 </template>
 

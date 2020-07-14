@@ -1,5 +1,5 @@
 <template>
-  <header class="w-screen bg-black fixed top-0">
+  <header class="w-screen bg-black fixed top-0 z-50">
     <ul class="h-12 container max-w-screen-md px-4 md:px-0 flex text-lg text-gray-500 items-center">
       <li class="cursor-pointer hover:text-gray-500">
         <nuxt-link

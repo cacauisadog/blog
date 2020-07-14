@@ -2,6 +2,8 @@
 title: "Quem é este que vos fala?"
 ---
 
+# Quem é este que vos fala?
+
 Meu nome é Cauê e estou na área há pouco mais de 5 anos. Neste tempo, trabalhei como desenvolvedor de softwares aplicativos para estação solo do [primeiro microssatélite universitário brasileiro](https://pt.wikipedia.org/wiki/ITASAT-1), como DevOps e analista de infraestrutura na [maior edtech do Brasil](https://medium.com/techatquero) e também fiz alguns trabalhos como freelancer.
 
 Atualmente, trabalho como engenheiro de software na [maravilhosa Buser](https://www.buser.com.br) (pronuncia _búser_, de _busão_) e, como um dos primeiros 5 funcionários a entrar, acompanho desde o começo todo o caos, diversão e bagunça organizada que só uma startup em crescimento exponencial pode proporcionar.
