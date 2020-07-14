@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import dayjs from 'dayjs'
 
 export default {
   props: {
@@ -29,7 +28,8 @@ export default {
   },
   computed: {
     articleDate () {
-      return dayjs(this.article.createdAt).format('DD/MM/YYYY')
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(this.article.createdAt).toLocaleDateString('pt-br', options)
     }
   }
 }

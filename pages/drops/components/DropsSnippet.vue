@@ -18,8 +18,6 @@
 </template>
 
 <script>
-import dayjs from 'dayjs'
-
 export default {
   props: {
     drops: {
@@ -29,7 +27,8 @@ export default {
   },
   computed: {
     dropsDate () {
-      return dayjs(this.drops.createdAt).format('DD/MM/YYYY')
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(this.drops.createdAt).toLocaleDateString('pt-br', options)
     }
   }
 }
