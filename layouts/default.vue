@@ -1,14 +1,12 @@
 <template>
   <div>
     <Navbar />
-    <main class="mt-20">
-      <nuxt />
-    </main>
+    <nuxt class="md:p-0 p-4 mt-20 mb-16 w-screen" />
     <Footer />
   </div>
 </template>
 
-<style lang="postcss">
+<style>
 html {
   font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;

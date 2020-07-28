@@ -1,6 +1,6 @@
 <template>
-  <div class="container max-w-screen-md md:px-2 px-5">
-    <h1 class="title">
+  <div class="container md:px-2 px-5">
+    <h1 class="text-lg">
       List of drops
     </h1>
     <LazyDropsList
@@ -23,6 +23,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>

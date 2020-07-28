@@ -1,8 +1,6 @@
 <template>
   <div class="container max-w-screen-md md:px-2 px-5">
-    <h1 class="title">
-      List of blog posts
-    </h1>
+    <h1>List of blog posts</h1>
     <LazyArticleList
       v-if="articles"
       :articles="articles"

@@ -3,12 +3,6 @@ title: "Testing frontmatter markdown loader"
 description: "Just a simple, short description of what the text in this post is all about."
 ---
 
-# Testing frontmatter markdown loader
-
-Just a simple, short description of what the text in this post is all about.
-
-<hr />
-
 ## Oi mundo!
 
 ### Isso aqui tá ligado? Deu certo?

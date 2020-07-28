@@ -1,7 +1,10 @@
 <template>
-  <div class="container max-w-screen-md md:px-0 px-5">
-    <MarkdownContent :markdown="home" />
-  </div>
+  <article class="container prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+    <h1 class="text-red-700">
+      {{ home.title }}
+    </h1>
+    <NuxtContent :document="home" />
+  </article>
 </template>
 
 <script>

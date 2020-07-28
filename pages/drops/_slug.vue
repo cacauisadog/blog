@@ -1,6 +1,9 @@
 <template>
-  <article class="md:p-0 p-4">
-    <MarkdownContent :markdown="drops" />
+  <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+    <h1>{{ drops.title }}</h1>
+    <p>{{ drops.description }}</p>
+    <p>{{ dropsDate }}</p>
+    <NuxtContent :document="drops" />
   </article>
 </template>
 
@@ -10,6 +13,12 @@ export default {
     const drops = await $content('drops', params.slug).fetch()
 
     return { drops }
+  },
+  computed: {
+    dropsDate () {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(this.drops.createdAt).toLocaleDateString('pt-br', options)
+    }
   }
 }
 </script>

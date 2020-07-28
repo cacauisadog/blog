@@ -1,6 +1,9 @@
 <template>
-  <article class="md:p-0 p-4">
-    <MarkdownContent :markdown="article" />
+  <article class="container prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.description }}</p>
+    <p>{{ articleDate }}</p>
+    <NuxtContent :document="article" />
   </article>
 </template>
 
@@ -10,6 +13,12 @@ export default {
     const article = await $content('blog', params.slug).fetch()
 
     return { article }
+  },
+  computed: {
+    articleDate () {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(this.article.createdAt).toLocaleDateString('pt-br', options)
+    }
   }
 }
 </script>
