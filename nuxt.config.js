@@ -54,7 +54,8 @@ export default {
       prism: {
         theme: 'assets/css/prism-tomorrow-night-eighties.css'
       }
-    }
+    },
+    liveEdit: false
   },
   /*
   ** Build configuration
