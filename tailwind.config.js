@@ -13,6 +13,9 @@ module.exports = {
       colors: { green: '#64B984' }
     }
   },
+  future: {
+    removeDeprecatedGapUtilities: true
+  },
   variants: {},
   plugins: [require('@tailwindcss/typography')],
   purge: {
