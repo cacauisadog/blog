@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <Nuxt class="container max-w-screen-lg px-4 prose sm:prose-sm lg:prose-lg mt-20 mb-16" />
-    <Footer />
+    <BlogFooter class="py-16" />
   </div>
 </template>
 
