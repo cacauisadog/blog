@@ -1,5 +1,5 @@
 <template>
-  <article class="container prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+  <article>
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
     <p>{{ articleDate }}</p>

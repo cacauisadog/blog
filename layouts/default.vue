@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <nuxt class="md:p-0 p-4 mt-20 mb-16 w-screen" />
+    <Nuxt class="container max-w-screen-lg px-4 prose sm:prose-sm lg:prose-lg mt-20 mb-16" />
     <Footer />
   </div>
 </template>

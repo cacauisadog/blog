@@ -1,5 +1,5 @@
 <template>
-  <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+  <article>
     <h1>{{ drops.title }}</h1>
     <p>{{ drops.description }}</p>
     <p>{{ dropsDate }}</p>

@@ -1,8 +1,6 @@
 <template>
-  <article class="container prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-    <h1 class="text-red-700">
-      {{ home.title }}
-    </h1>
+  <article>
+    <h1>{{ home.title }}</h1>
     <NuxtContent :document="home" />
   </article>
 </template>

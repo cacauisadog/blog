@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-md md:px-2 px-5">
+  <div>
     <h1>List of blog posts</h1>
     <LazyArticleList
       v-if="articles"

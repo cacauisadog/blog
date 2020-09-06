@@ -1,7 +1,8 @@
 <template>
-  <div class="container max-w-screen-md md:px-0 px-5">
-    <MarkdownContent :markdown="about" />
-  </div>
+  <article>
+    <h1>{{ about.title }}</h1>
+    <NuxtContent :document="about" />
+  </article>
 </template>
 
 <script>
@@ -13,6 +14,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
