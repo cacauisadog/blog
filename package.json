@@ -15,7 +15,7 @@
     "analyze": "nuxt build --analyze"
   },
   "dependencies": {
-    "@nuxt/content": "^1.7.1",
+    "@nuxt/content": "^1.8.1",
     "nuxt": "^2.14.4"
   },
   "devDependencies": {
