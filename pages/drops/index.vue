@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Drops</h1>
+    <h2>Artigos curtinhos com resoluções de problemas pontuais.</h2>
     <hr>
     <DropsListSkeleton v-if="!dropsList" />
     <LazyDropsList

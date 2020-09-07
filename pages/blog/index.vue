@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Blog</h1>
+    <h2>Tutoriais, guias, <i>how-to's</i> e textos no geral mais longos.</h2>
     <hr>
     <ArticleListSkeleton v-if="!articles" />
     <LazyArticleList
