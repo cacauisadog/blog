@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <Nuxt class="container max-w-screen-lg px-4 prose sm:prose-sm lg:prose-lg mt-20 mb-16" />
+    <Nuxt class="container max-w-screen-lg px-4 prose sm:prose-sm lg:prose-lg mt-32 mb-16" />
     <BlogFooter class="py-16" />
   </div>
 </template>
