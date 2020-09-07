@@ -1,24 +1,24 @@
 <template>
-  <article class="rounded shadow overflow-hidden mb-8 border border-white p-4">
+  <article>
     <router-link
       :to="`/blog/${article.slug}`"
-      class="block"
+      class="md:flex md:items-center hover:bg-gray-400"
+      style="text-decoration: none;"
     >
-      <h2 class="text-xl leading-7 font-semibold text-gray-200">
+      <h2 style="margin: 0;">
         {{ article.title }}
       </h2>
-      <p class="text-sm font-thin text-gray-100">
+      <h3
+        class="md:ml-auto"
+        style="margin-bottom: 0;"
+      >
         {{ articleDate }}
-      </p>
-      <h3 class="mt-3 text-base leading-6 text-gray-100">
-        {{ article.description }}
       </h3>
     </router-link>
   </article>
 </template>
 
 <script>
-
 export default {
   props: {
     article: {

@@ -1,9 +1,10 @@
 <template>
-  <div class="flex flex-wrap">
+  <div>
     <DropsSnippet
       v-for="drops in dropsList"
       :key="drops.slug"
       :drops="drops"
+      class="mb-8"
     />
   </div>
 </template>

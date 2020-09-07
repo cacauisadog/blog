@@ -1,17 +1,18 @@
 <template>
-  <article class="rounded shadow overflow-hidden mb-8 border border-white p-4">
+  <article>
     <router-link
       :to="`/drops/${drops.slug}`"
-      class="block"
+      class="flex items-center hover:bg-gray-400"
+      style="text-decoration: none;"
     >
-      <h2 class="text-xl leading-7 font-semibold text-gray-200">
+      <h2 style="margin: 0;">
         {{ drops.title }}
       </h2>
-      <p class="text-sm font-thin text-gray-100">
+      <h3
+        class="ml-auto"
+        style="margin-bottom: 0;"
+      >
         {{ dropsDate }}
-      </p>
-      <h3 class="mt-3 text-base leading-6 text-gray-100">
-        {{ drops.description }}
       </h3>
     </router-link>
   </article>
