@@ -4,7 +4,7 @@
       v-for="drops in dropsList"
       :key="drops.slug"
       :drops="drops"
-      class="mb-8"
+      class="mb-4"
     />
   </div>
 </template>

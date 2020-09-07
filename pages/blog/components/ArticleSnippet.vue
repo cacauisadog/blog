@@ -2,18 +2,18 @@
   <article>
     <router-link
       :to="`/blog/${article.slug}`"
-      class="md:flex md:items-center hover:bg-gray-400"
+      class="md:flex md:items-center p-4 transition duration-100 hover:bg-green rounded-md"
       style="text-decoration: none;"
     >
       <h2 style="margin: 0;">
         {{ article.title }}
       </h2>
-      <h3
+      <p
         class="md:ml-auto"
         style="margin-bottom: 0;"
       >
         {{ articleDate }}
-      </h3>
+      </p>
     </router-link>
   </article>
 </template>

@@ -2,18 +2,18 @@
   <article>
     <router-link
       :to="`/drops/${drops.slug}`"
-      class="flex items-center hover:bg-gray-400"
+      class="md:flex md:items-center p-4 transition duration-100 hover:bg-green rounded-md"
       style="text-decoration: none;"
     >
       <h2 style="margin: 0;">
         {{ drops.title }}
       </h2>
-      <h3
+      <p
         class="ml-auto"
         style="margin-bottom: 0;"
       >
         {{ dropsDate }}
-      </h3>
+      </p>
     </router-link>
   </article>
 </template>

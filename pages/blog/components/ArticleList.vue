@@ -4,7 +4,7 @@
       v-for="article in articles"
       :key="article.slug"
       :article="article"
-      class="mb-8"
+      class="mb-4"
     />
   </div>
 </template>
