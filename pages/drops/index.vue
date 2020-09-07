@@ -1,13 +1,12 @@
 <template>
   <div>
-    <h1 class="text-lg">
-      List of drops
-    </h1>
+    <h1>Drops</h1>
+    <hr>
+    <DropsListSkeleton v-if="!dropsList" />
     <LazyDropsList
-      v-if="dropsList"
+      v-else
       :drops-list="dropsList"
     />
-    <DropsListSkeleton v-else />
   </div>
 </template>
 

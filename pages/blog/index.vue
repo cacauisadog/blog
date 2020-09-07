@@ -1,11 +1,12 @@
 <template>
   <div>
-    <h1>List of blog posts</h1>
+    <h1>Blog</h1>
+    <hr>
+    <ArticleListSkeleton v-if="!articles" />
     <LazyArticleList
-      v-if="articles"
+      v-else
       :articles="articles"
     />
-    <ArticleListSkeleton v-else />
   </div>
 </template>
 
