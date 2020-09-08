@@ -1,5 +1,5 @@
 ---
-title: Desligando listeners de eventos customizados
+title: Desligando listeners de eventos customizados no Vue.js
 description: Entenda como e por quê desligar os listeners dos seus eventos customizados
 tags: vuejs,dicas
 references: https://vuejs.org/v2/api/#vm-off
