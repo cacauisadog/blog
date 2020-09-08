@@ -1,9 +1,12 @@
 <template>
   <nav class="w-screen bg-black fixed top-0 z-50">
-    <ul class="container flex items-center max-w-screen-lg px-4 h-16 text-lg text-gray-400">
-      <li class="cursor-pointer">
-        <nuxt-link :to="`/`">
-          logo
+    <ul class="container flex items-center max-w-screen-lg h-16 text-lg text-gray-400">
+      <li>
+        <nuxt-link
+          :to="`/`"
+          class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
+        >
+          Cauê
         </nuxt-link>
       </li>
       <li class="ml-auto">
@@ -11,7 +14,7 @@
           :to="`/blog`"
           class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
         >
-          blog
+          Blog
         </nuxt-link>
       </li>
       <li>
@@ -19,7 +22,7 @@
           :to="`/drops`"
           class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
         >
-          drops
+          Drops
         </nuxt-link>
       </li>
       <li>
@@ -27,7 +30,7 @@
           :to="`/about`"
           class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
         >
-          sobre
+          Sobre
         </nuxt-link>
       </li>
     </ul>
