@@ -3,7 +3,7 @@
     <h1>{{ home.title }}</h1>
     <NuxtContent :document="home" />
 
-    <article v-if="latestArticles">
+    <article v-if="latestArticles && latestArticles.length > 0">
       <h2>
         Últimos artigos no blog
         <nuxt-link to="/blog">
@@ -17,19 +17,17 @@
     </article>
 
     <article
-      v-if="latestDrops"
+      v-if="latestDrops && latestDrops.length > 0"
       class="mt-20"
     >
-      <div>
-        <h2>
-          Últimos drops
-          <nuxt-link to="/drops">
-            <button class="p-2 mt-4 text-sm text-white bg-green rounded-md">
-              Ver todos
-            </button>
-          </nuxt-link>
-        </h2>
-      </div>
+      <h2>
+        Últimos drops
+        <nuxt-link to="/drops">
+          <button class="p-2 mt-4 text-sm text-white bg-green rounded-md">
+            Ver todos
+          </button>
+        </nuxt-link>
+      </h2>
       <hr>
       <LazyDropsList :drops-list="latestDrops" />
     </article>
