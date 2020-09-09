@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import { SEOData, createSEOMeta } from '~/utils/seo'
+
 export default {
   async asyncData ({ $content, params }) {
     const drops = await $content('drops', params.slug).fetch()
@@ -46,6 +48,14 @@ export default {
     dropsDate () {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(this.drops.createdAt).toLocaleDateString('pt-br', options)
+    }
+  },
+  head () {
+    const { title, description } = this.drops
+
+    return {
+      title: title + SEOData.delimiter + SEOData.title,
+      meta: createSEOMeta({ description })
     }
   }
 }

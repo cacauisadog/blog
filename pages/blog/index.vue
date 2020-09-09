@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import { SEOData, createSEOMeta } from '~/utils/seo'
+
 export default {
   async asyncData ({ $content }) {
     const articles = await $content('blog')
@@ -20,6 +22,15 @@ export default {
       .fetch()
 
     return { articles }
+  },
+  head () {
+    const title = 'Todos os artigos'
+    const description = 'Entenda mais sobre desenvolvimento web, incluindo linguagens como Javascript e Python e frameworks como Vue.js, Nuxt.js e Django.'
+
+    return {
+      title: title + SEOData.delimiter + SEOData.title,
+      meta: createSEOMeta({ description })
+    }
   }
 }
 </script>

@@ -1,5 +1,6 @@
 ---
 title: "Quem é este que vos fala?"
+description: "Saiba quem é a lenda, a figura misteriosa, A PESSOA POR TRÁS DA MÁSCARA. Mas não vai com expectativas altas demais pra não se decepcionar (-:"
 ---
 
 Meu nome é Cauê e estou na área há pouco mais de 5 anos. Neste tempo, trabalhei como desenvolvedor de softwares aplicativos para estação solo do [primeiro microssatélite universitário brasileiro](https://pt.wikipedia.org/wiki/ITASAT-1), como DevOps e analista de infraestrutura na [maior edtech do Brasil](https://medium.com/techatquero) e também fiz alguns trabalhos como freelancer.

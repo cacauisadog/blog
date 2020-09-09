@@ -1,4 +1,6 @@
 
+import { SEOData } from './utils/seo'
+
 export default {
   mode: 'universal',
   target: 'static',
@@ -10,11 +12,14 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: SEOData.title + SEOData.delimiter + SEOData.shortDescription,
+    htmlAttrs: {
+      lang: 'pt-br'
+    },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' },
+      { hid: 'description', name: 'description', content: SEOData.description }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
