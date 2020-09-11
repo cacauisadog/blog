@@ -4,10 +4,7 @@ import { SEOData } from './utils/seo'
 export default {
   mode: 'universal',
   target: 'static',
-  components: [
-    '~/components',
-    { path: '~/pages', pattern: '**/components/*.vue' }
-  ],
+  components: true,
   /*
   ** Headers of the page
   */
