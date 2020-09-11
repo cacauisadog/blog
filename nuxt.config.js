@@ -1,5 +1,6 @@
 
 import { SEOData } from './utils/seo'
+import getRoutes from './utils/sitemap'
 
 export default {
   mode: 'universal',
@@ -49,7 +50,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
   content: {
     markdown: {
@@ -58,6 +60,10 @@ export default {
       }
     },
     liveEdit: false
+  },
+  sitemap: {
+    hostname: process.env.HOST_NAME || 'http://localhost:3000',
+    routes: getRoutes
   },
   /*
   ** Build configuration
