@@ -42,18 +42,18 @@ export default {
 
     return { article, prev, next }
   },
-  computed: {
-    articleDate () {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(this.article.createdAt).toLocaleDateString('pt-br', options)
-    }
-  },
   head () {
     const { title, description } = this.article
 
     return {
       title: title + SEOData.delimiter + SEOData.title,
       meta: createSEOMeta({ description })
+    }
+  },
+  computed: {
+    articleDate () {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(this.article.createdAt).toLocaleDateString('pt-br', options)
     }
   }
 }

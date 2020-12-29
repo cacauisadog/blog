@@ -44,18 +44,18 @@ export default {
 
     return { drops, prev, next }
   },
-  computed: {
-    dropsDate () {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(this.drops.createdAt).toLocaleDateString('pt-br', options)
-    }
-  },
   head () {
     const { title, description } = this.drops
 
     return {
       title: title + SEOData.delimiter + SEOData.title,
       meta: createSEOMeta({ description })
+    }
+  },
+  computed: {
+    dropsDate () {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(this.drops.createdAt).toLocaleDateString('pt-br', options)
     }
   }
 }
