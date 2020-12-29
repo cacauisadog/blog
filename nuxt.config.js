@@ -3,7 +3,6 @@ import { SEOData } from './utils/seo'
 import getRoutes from './utils/sitemap'
 
 export default {
-  mode: 'universal',
   target: 'static',
   components: true,
   /*
