@@ -1,31 +1,17 @@
-/*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
+const colors = require('tailwindcss/colors')
+
 module.exports = {
+  darkMode: 'class',
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
+  content: ['content/**/*.{md,yml,json,json5,csv}'],
   theme: {
-    container: {
-      center: true
-    },
     extend: {
-      colors: { green: '#64B984' }
+      colors: {
+        // Customize the feeling of your site
+        gray: colors.stone
+      }
     }
-  },
-  future: {
-    removeDeprecatedGapUtilities: true
-  },
-  variants: {},
-  plugins: [require('@tailwindcss/typography')],
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js'
-    ]
   }
 }

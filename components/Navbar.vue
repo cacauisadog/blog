@@ -1,38 +1,24 @@
 <template>
-  <nav class="w-screen bg-black fixed top-0 z-50">
-    <ul class="container flex items-center max-w-screen-lg h-16 text-lg text-gray-400">
-      <li>
-        <nuxt-link
-          :to="`/`"
-          class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
+  <div class="flex justify-between max-w-2xl px-4 py-4 mx-auto sm:px-8">
+    <!-- Navigation -->
+    <div class="text-gray-700 dark:text-gray-200">
+      <ContentNavigation v-slot="{ navigation }">
+        <NuxtLink
+          v-for="link of navigation"
+          :key="link._path"
+          :to="link._path"
+          active-class="font-bold"
+          class="mr-4"
         >
-          Cauê
-        </nuxt-link>
-      </li>
-      <li class="ml-auto">
-        <nuxt-link
-          :to="`/blog`"
-          class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
-        >
-          Blog
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link
-          :to="`/drops`"
-          class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
-        >
-          Drops
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link
-          :to="`/about`"
-          class="p-4 cursor-pointer transition duration-100 hover:text-white hover:bg-green"
-        >
-          Sobre
-        </nuxt-link>
-      </li>
-    </ul>
-  </nav>
+          {{ link.navTitle || link.title }}
+        </NuxtLink>
+      </ContentNavigation>
+    </div>
+    <!-- Social icons & Color Mode -->
+    <div class="space-x-3 text-gray-500 transition">
+      <a href="https://twitter.com/Atinux" title="Twitter" class="hover:text-gray-700 dark:hover:text-gray-300"><Icon name="fa-brands:twitter" /></a>
+      <a href="https://github.com/Atinux/content-wind" title="GitHub" class="hover:text-gray-700 dark:hover:text-gray-300"><Icon name="fa-brands:github" /></a>
+      <ColorModeSwitch class="hover:text-gray-700 dark:hover:text-gray-300" />
+    </div>
+  </div>
 </template>
